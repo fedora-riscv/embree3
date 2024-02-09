@@ -5,7 +5,7 @@
 
 Name:		%{srcname}3
 Version:	3.13.5
-Release:	%autorelease
+Release:	%autorelease -e rv64
 Summary:	Collection of high-performance ray tracing kernels
 
 License:	Apache-2.0
@@ -40,7 +40,7 @@ BuildRequires:	pkgconfig(OpenImageIO)
 BuildRequires:	pkgconfig(tbb)
 
 # Embree only supports these architectures with SSE2 and up enabled
-ExclusiveArch:	aarch64 x86_64
+ExclusiveArch:	aarch64 x86_64 riscv64
 
 %description
 A collection of high-performance ray tracing kernels intended to graphics 
